@@ -26,6 +26,7 @@ function App() {
           <div>
             <h1>LOGOS</h1>
           </div>
+           <div class="menu-overlay" id="menuOverlay"></div>
           <div className={`nav-links ${isMenuOpen ? 'active' : ''}`}
             onClick={toggleMenu} 
             aria-label='Toggle Menu' 
