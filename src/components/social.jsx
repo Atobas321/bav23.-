@@ -4,7 +4,7 @@ import sos3 from '../assets/sos3.png'
 import sos4 from '../assets/sos4.png'
 import sos5 from '../assets/sos5.png'
 
-function Social(){
+const Social=()=>{
     const footContainer ={
         width: "auto",
         height: "3rem",
@@ -49,4 +49,4 @@ function Social(){
         </>
     )
 }
-export default Social
+export default Social;
