@@ -1,0 +1,35 @@
+/**.row{
+    display: flex;
+  /**border: 2px solid red;
+   gap: 20px;
+   width: auto; 
+   height: 10rem; 
+}*/
+
+   
+  /** border: 2px solid blue; */
+   
+
+li{
+ 
+    align-self:center;
+    
+}
+
+
+/**@media( max-width: 768px){
+    .row{
+        display: block;
+        width: auto;
+        height: auto;
+        margin: 20px;
+    
+
+        
+    }
+    .col{
+        width: auto;
+        height: auto;
+        margin: 20px;
+    }
+} */

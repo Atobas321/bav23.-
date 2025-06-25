@@ -1,0 +1,53 @@
+.fragment{
+   width: 100%;
+    align-self: center;
+    margin-top: 5rem;
+    display: center;
+}
+h4 {
+    color: black;
+    justify-items: center;
+    justify-content: center;
+    padding-top: 5px;
+    margin-left: 5rem;
+   
+}
+button{
+    color: beige;
+    background: rgb(45, 161, 207);
+    border: none;
+    border-radius: 30%;
+    padding: 1rem;
+    width: 10rem;
+    
+}
+.col3{
+     width: 100%;
+      height: 15rem;
+       border-radius: 2rem;
+       justify-content: center;
+       display: block;
+       align-self: center;
+       padding-top: 10px;
+
+
+}
+.description{
+    background-color: rgb(16, 155, 197);
+    color: black;
+    width: auto;
+    height: 5rem;
+    border-radius: 15px ;
+    margin: 15px;
+    padding: 10px;
+    
+}
+@media( max-width: 768px){
+    .fragment{
+        width: 100%;
+        max-width: 300px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+   
+}

@@ -1,0 +1,52 @@
+import sos1 from '../assets/sos1.png'
+import sos2 from '../assets/sos2.png'
+import sos3 from '../assets/sos3.png'
+import sos4 from '../assets/sos4.png'
+import sos5 from '../assets/sos5.png'
+
+function Social(){
+    const footContainer ={
+        width: "auto",
+        height: "3rem",
+         background: "rgb(43, 132, 184)",
+          flexWrap: "wrap",
+         justifyContent : "center",
+         textAlign: "center",
+         justifyAlign: "center"
+     
+    };
+    const pic1 = {
+           width: "2rem",
+           padding: "1rem"
+    };
+    const pic2 = {
+        width: "2rem",
+          padding: "1rem"
+    };
+    const pic3 = {
+    width: "2rem",
+    padding: "1rem"
+    
+    }; 
+    const pic4 = {
+        width: "2rem",
+        padding: "1rem"
+    };
+    const pic5 = {
+        width: "2rem",
+        padding: "1rem"
+    };
+
+    return(
+        <>
+           <div className='footer-container' style={footContainer}>
+            <img src={sos1} alt='telegram' style={pic1}/>
+            <img src={sos2} alt='whatsapp' style={pic2}/>
+            <img src={sos3} alt='instagram' style={pic3}/>
+            <img src={sos4} alt='facebook' style={pic4}/>
+            <img src={sos5} alt='messenger' style={pic5}/>
+        </div>
+        </>
+    )
+}
+export default Social
