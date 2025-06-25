@@ -60,6 +60,7 @@ ul li a:hover{
 @media( max-width: 768px){
  
   .hamburger{
+    position: fixed;
     display: flex;
     flex-direction: column;
     justify-content:space-evenly ;
@@ -68,8 +69,9 @@ ul li a:hover{
     cursor: pointer;
     padding: 0;
     margin-top: -2rem;
-    margin-left: 27rem;
+    margin-left: 50rem;
     overflow-x: hidden;
+    display:  0;
     
     
   }

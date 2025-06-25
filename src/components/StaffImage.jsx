@@ -14,7 +14,8 @@ function StaffImage(){
         justifyContent: "center",
         alignItems: "center",
         justifyItems: "center",
-        paddingBottom : "2rem"
+        paddingBottom : "2rem",
+        flexWrap: "wrap"
        
 
    };

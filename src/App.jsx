@@ -57,9 +57,9 @@ function App() {
       {/**<MiddleSection/> */} 
 
       <ul className='rowling'>
-        <ImagePropsCombine {...ImageColRow[0]}/> {/* Added space before spread */}
-        <ImagePropsCombine {...ImageColRow[1]}/> {/* Added space before spread */}
-        <ImagePropsCombine {...ImageColRow[2]}/> {/* Added space before spread */}
+        <ImagePropsCombine {...ImageColRow[0]}/> 
+        <ImagePropsCombine {...ImageColRow[1]}/> 
+        <ImagePropsCombine {...ImageColRow[2]}/> 
       </ul>  
       
       <Section/>
