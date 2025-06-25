@@ -12,7 +12,7 @@ function Social(){
           flexWrap: "wrap",
          justifyContent : "center",
          textAlign: "center",
-         justifyAlign: "center"
+         display: "flex"
      
     };
     const pic1 = {
