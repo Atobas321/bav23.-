@@ -10,7 +10,7 @@ import { ImageColRow } from './components/ImageColRow.js'
 import { Update } from './components/Update.jsx'
 import TrackingSection from './components/TrackingSection.jsx'
 import StaffImage from './components/StaffImage.jsx'
-import Social from './components/social' // Uncommented this import
+import Social from './components/social.jsx' // Uncommented this import
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
