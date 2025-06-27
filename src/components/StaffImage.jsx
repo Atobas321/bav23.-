@@ -8,8 +8,8 @@ function StaffImage(){
         display: "flex",
         flexDirection: "row",
         margin : "0 auto",
-        width: "70rem",
-        maxWidth: "400px",
+        width: "100%",
+       
         gap:"2rem",
         justifyContent: "center",
         alignItems: "center",
@@ -21,20 +21,20 @@ function StaffImage(){
    };
  
      const staff1 = {
-        width: "15rem",
-        height: "15rem"
+        width: "20rem",
+        height: "20rem"
      };
      const staff2 = {
-        width :"15rem",
-        height: "15rem"
+        width :"20rem",
+        height: "20rem"
      };
      const staff3 = {
-        width: "15rem",
-        height: "15rem"
+        width: "20rem",
+        height: "20rem"
      };
      const staff4 = {
-        width: "15rem",
-        height: "15rem"
+        width: "20rem",
+        height: "20rem"
      }
      const style = {
       color: "black",

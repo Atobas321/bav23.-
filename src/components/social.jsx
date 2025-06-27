@@ -7,9 +7,11 @@ import sos5 from '../assets/sos5.png'
 const Social=()=>{
     const footContainer ={
         width: "auto",
-        height: "3rem",
+        height: "4rem",
          background: "rgb(43, 132, 184)",
           flexWrap: "wrap",
+         
+          flexDirection: "row",
          justifyContent : "center",
          textAlign: "center",
          display: "flex",

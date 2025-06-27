@@ -20,7 +20,7 @@
 
 .nav-links{
   justify-content: center;
-  
+  position: fixed;
   width: 100%;
      
 }
@@ -69,10 +69,10 @@ ul li a:hover{
     cursor: pointer;
     padding: 0;
     margin-top: -2rem;
-    margin-left: 40rem;
+   right :1em;
     overflow-y: auto;
     display:  0;
-    
+     position: absolute;
     
   }
   .rowling{
@@ -81,7 +81,7 @@ ul li a:hover{
   }
 .hamburger-line{
   width: 90%;
-  height: 5px;
+  height: 15%;
   background: #091477;
   transition: all 0.3s ease; 
   z-index: 999; 
