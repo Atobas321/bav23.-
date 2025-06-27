@@ -1,4 +1,4 @@
-*{
+/**{
   Margin: 0px;
   padding:0px;
 }
@@ -10,7 +10,7 @@
   background-color: rgb(20, 148, 187);
   z-index: -1000;
   
-} */
+} 
 .menubar{
   width: auto;
   height: 4rem;
@@ -193,3 +193,156 @@ ul li a:hover{
   color: #888;
 }
 }*/
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.menubar {
+  width: 100%;
+  height: 4rem;
+  background-color: rgb(25, 134, 177);
+  position: relative; /* Added for hamburger positioning context */
+}
+
+.nav-links {
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 10rem;
+}
+
+ul li {
+  margin-top: -2.5rem;
+  justify-content: flex-end;
+  padding-inline: 0.5rem;
+  line-height: 1.5rem;
+  font-size: 15px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+ul li a:hover {
+  background: navy;
+  padding: 10px;
+  margin-top: -3px;
+}
+
+.rowling {
+  display: flex;
+  justify-self: center;
+  gap: 5rem;
+  margin: 0 auto;
+}
+
+/* Hide hamburger on desktop */
+.hamburger {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  
+  .hamburger {
+    display: flex; /* Show on mobile */
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 3rem;
+    height: 2rem;
+    cursor: pointer;
+    padding: 0;
+    /* FIXED: Use absolute positioning relative to menubar */
+    position: absolute;
+    top: 50%;
+    right: 1rem; /* Use rem instead of fixed margin-left */
+    transform: translateY(-50%); /* Center vertically */
+    z-index: 1000;
+  }
+  
+  .rowling {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .hamburger-line {
+    width: 90%;
+    height: 15%;
+    background: #091477;
+    transition: all 0.3s ease;
+    z-index: 999;
+  }
+
+  .hamburger.active .hamburger-line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  
+  .hamburger.active .hamburger-line:nth-child(2) {
+    opacity: 0; /* Better than display: none for animations */
+  }
+  
+  .hamburger.active .hamburger-line:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+  }
+
+  .nav-links {
+    position: fixed; /* Keep fixed for mobile menu */
+    top: 0;
+    right: -100%; /* Use percentage instead of fixed value */
+    width: 250px;
+    height: 100vh;
+    background: rgb(43, 132, 184);
+    padding-top: 70px;
+    transition: right 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 999;
+  }
+
+  .nav-links.active {
+    right: 0;
+  }
+
+  .nav-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: block;
+    margin-left: 0; /* Reset desktop margin */
+  }
+
+  .nav-links ul li {
+    padding: 1rem;
+    width: auto; /* Let it be flexible */
+    margin-top: 0; /* Reset desktop negative margin */
+  }
+
+  .menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 800;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease;
+  }
+
+  .menu-overlay.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* Hide desktop navigation on mobile */
+  .nav-links:not(.mobile-menu) {
+    display: none;
+  }
+}
