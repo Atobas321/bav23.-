@@ -341,8 +341,5 @@ ul li a:hover {
     visibility: visible;
   }
 
-  /* Hide desktop navigation on mobile */
-  .nav-links:not(.mobile-menu) {
-    display: none;
-  }
+ 
 }
