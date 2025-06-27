@@ -1,8 +1,8 @@
 import '../components/Update.css'
-import test1 from "../assets/test1.jpeg"
-import test2 from '../assets/test2.jpeg'
-import test3 from '../assets/test3.jpeg'
-import travel1 from '../assets/travel1.jpeg'
+import update1 from "../assets/test1.jpeg"
+import update2 from '../assets/test2.jpeg'
+import update3 from '../assets/test3.jpeg'
+import update4 from '../assets/travel1.jpeg'
 import travel2 from '../assets/travel2.jpeg'
 import travel3 from '../assets/travel3.jpeg'
 import sli1 from '../assets/sli1.jpeg'
@@ -15,7 +15,7 @@ import { useEffect, useState } from 'react'
 export const Update=()=>{
     const[miniCurrent, setMiniCurrent] = useState(0)
     const items=[
-        test1, test2, test3, travel1,  travel2, travel3,
+       update1, update2, update3, update4,  travel2, travel3,
          sli1,sli2, sli3, sli4, sli5]
 
     useEffect(()=>{
