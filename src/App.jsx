@@ -11,6 +11,7 @@ import { Update } from './components/Update.jsx'
 import TrackingSection from './components/TrackingSection.jsx'
 import StaffImage from './components/StaffImage.jsx'
 import Social from './components/social.jsx' // Uncommented this import
+//import ControlledForm  from './components/form.jsx'
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -67,6 +68,7 @@ function App() {
       <Update/>
       <StaffImage/>
       <Social/>
+      <ControlledForm/>
     </>
   )
 
